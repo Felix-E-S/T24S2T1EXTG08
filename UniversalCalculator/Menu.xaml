@@ -10,6 +10,7 @@
 
 	<Grid>
 		<StackPanel>
+			<Image x:Name="Logo" Source="/Assets/StoreLogo.png" Height="50" Width="50" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10"/>
 			<TextBlock x:Name="titleMenu" FontSize="90" Text="Universal Calculator" FontWeight="Bold" Margin="10" HorizontalAlignment="Center"></TextBlock>
 			<StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="20">
 				<Button x:Name="maths" Content="Maths Calculator" FontSize="60" Margin="10" Click="mathsCalculator_Click" Width="600"></Button>
