@@ -26,5 +26,10 @@ namespace Calculator
 		{
 			this.InitializeComponent();
 		}
+
+		private void title_SelectionChanged(object sender, RoutedEventArgs e)
+		{
+
+		}
 	}
 }
