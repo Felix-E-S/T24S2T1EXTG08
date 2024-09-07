@@ -10,7 +10,21 @@
 
 	<Grid>
 		<StackPanel>
-			<TextBlock x:Name="title" Text = "Currency Converter" HorizontalAlignment="Center" Height="62" Width="425" SelectionChanged="title_SelectionChanged" FontSize="48"/>
+			<TextBlock x:Name="title" Text = "Currency Converter Calculator" HorizontalAlignment="Center" Height="62" Width="642" SelectionChanged="title_SelectionChanged" FontSize="48"/>
+			<StackPanel Orientation ="Horizontal" Height="73">
+				<TextBlock Text="Amount $" Width="381" TextAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" FontSize="36"/>
+				<TextBlock Text="From"  Width="337" TextAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" FontSize="36"></TextBlock>
+				<TextBlock Text="To"  Width="398" TextAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" FontSize="36"></TextBlock>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal">
+				<TextBox Width="381" TextAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" FontSize="36"></TextBox>
+				<ComboBox Width="381" VerticalAlignment="Center" Margin="10,10,10,10" FontSize="36">
+					<ComboBoxItem IsSelected="True"> US Dollar </ComboBoxItem>
+					<ComboBoxItem>Euro</ComboBoxItem>
+					<ComboBoxItem>British Pound</ComboBoxItem>
+					<ComboBoxItem>Indian Rupee</ComboBoxItem>
+				</ComboBox>
+			</StackPanel>
 		</StackPanel>
 	</Grid>
 </Page>
