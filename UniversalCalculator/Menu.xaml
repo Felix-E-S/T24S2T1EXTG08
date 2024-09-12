@@ -16,6 +16,7 @@
 				<Button x:Name="maths" Content="Maths Calculator" FontSize="60" Margin="10" Click="mathsCalculator_Click" Width="600"></Button>
 				<Button x:Name="mortgage" Content="Mortgage Calculator" FontSize="60" Margin="10" Click="mortgageCalculator_Click" Width="600"></Button>
 				<Button x:Name="currency" Content="Currency Converter" FontSize="60" Margin="10" Click="currencyConverter_Click" Width="600"></Button>
+				<Button x:Name="Trip" Content="Trip Calculator" FontSize="60" Margin="10" Click="currencyConverter_Click" Width="600"></Button>
 				<Button x:Name="exit" Content="Exit" FontSize="60" Margin="10" Click="exit_Click" Width="600"></Button>
 			</StackPanel>
 		</StackPanel>
