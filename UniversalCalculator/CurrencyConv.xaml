@@ -8,7 +8,68 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+	<Grid x:Name="gridRows">
 
-    </Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" MinHeight="111"/>
+			<RowDefinition Height="43*"/>
+			<RowDefinition Height="102*"/>
+		</Grid.RowDefinitions>
+
+		<StackPanel Grid.Row="0">
+			<TextBlock x:Name="title" Text = "Currency Converter Calculator" TextAlignment="Center" HorizontalAlignment="Center" Height="120" Width="642" FontSize="48" Margin="0,20,0,0"/>
+		</StackPanel>
+
+		<Grid x:Name="gridRow1" Grid.Row="1">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="410*"/>
+				<ColumnDefinition Width="421*"/>
+				<ColumnDefinition Width="449*"/>
+			</Grid.ColumnDefinitions>
+
+
+			<StackPanel Grid.Column="0">
+				<TextBlock Text="Amount" Width="381" TextAlignment="Center"  Margin="10,10,10,10" FontSize="36"/>
+				<TextBox x:Name="amountTextBox" Width="381" TextAlignment="Center" Margin="10,10,10,10" FontSize="36"></TextBox>
+			</StackPanel>
+			<StackPanel Grid.Column="1">
+				<TextBlock Text="From"  Width="337" TextAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" FontSize="36"></TextBlock>
+
+				<ComboBox x:Name="fromComboBox" Width="381" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" FontSize="36">
+					<ComboBoxItem IsSelected="True">US Dollar</ComboBoxItem>
+					<ComboBoxItem>Euro</ComboBoxItem>
+					<ComboBoxItem>British Pound</ComboBoxItem>
+					<ComboBoxItem>Indian Rupee</ComboBoxItem>
+				</ComboBox>
+			</StackPanel>
+			<StackPanel Grid.Column="2">
+				<TextBlock Text="To"  Width="398" TextAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" FontSize="36"></TextBlock>
+				<ComboBox x:Name="toComboBox" Width="381" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" FontSize="36">
+					<ComboBoxItem IsSelected="True">US Dollar</ComboBoxItem>
+					<ComboBoxItem>Euro</ComboBoxItem>
+					<ComboBoxItem>British Pound</ComboBoxItem>
+					<ComboBoxItem>Indian Rupee</ComboBoxItem>
+				</ComboBox>
+			</StackPanel>
+		</Grid>
+		<StackPanel Grid.Row="2">
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Height="121" Width="1273">
+				<TextBlock x:Name="resultsTextBlock" Text="Results:" TextAlignment="Center" Width="601" FontSize="30" VerticalAlignment="Center" Margin="10,10,10,10"/>
+				<TextBlock x:Name="reverseTextBlock" Text ="Default" TextAlignment="Center" Width="601" FontSize="30" VerticalAlignment="Center" Margin="10,10,10,10"/>
+
+			</StackPanel>
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+				
+				<TextBlock x:Name="from1UnitBlock" Text="Results:" TextAlignment="Center" Width="600" FontSize="24" VerticalAlignment="Center" Margin="10,10,10,10"/>
+				<TextBlock x:Name="to1UnitBlock" Text="Default" TextAlignment="Center" Width="600" FontSize="24" VerticalAlignment="Center" Margin="10,10,10,10"/>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal" Height="215" HorizontalAlignment="Center" Width="447">
+				<Button x:Name="calcButton" Content="Calculate" Width="200" Margin="10,10,10,10" Height="68" FontSize="36" Click="calcButton_Click"/>
+				<Button x:Name="exitButton" Content="Exit" Width="200" Margin="10,10,10,10" Height="63" FontSize="36" Click="exitButton_Click"/>
+
+			</StackPanel>
+		</StackPanel>
+
+
+	</Grid>
 </Page>
