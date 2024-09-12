@@ -15,19 +15,22 @@ namespace Calculator
 		{
 			this.InitializeComponent();
 		}
-
+		//menu navigation
 		private void mathsCalculator_Click(object sender, RoutedEventArgs e)
 		{
 			this.Frame.Navigate(typeof(MainPage));
 		}
+		//menu navigation
 		private void mortgageCalculator_Click(object sender, RoutedEventArgs e)
 		{
 			this.Frame.Navigate(typeof(MortgageCalc));
 		}
+		//menu navigation
 		private void currencyConverter_Click(object sender, RoutedEventArgs e)
 		{
 			this.Frame.Navigate(typeof(CurrencyConv));
 		}
+		//menu navigation
 		private void exit_Click(object sender, RoutedEventArgs e)
 		{
 			Environment.Exit(0);
